@@ -1,0 +1,957 @@
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists
+   will truncate terms that are too long to fit in the left column
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Bootstrap overrides*/
+
+.navbar .nav > li > .dropdown-menu.pull-center:after {
+    left: 50%;
+    margin-left: -6px;
+}
+
+.navbar .nav > li > .dropdown-menu.pull-center:before {
+    left: 50%;
+    margin-left: -7px;
+}
+
+.navbar-inverse {
+    background-color: #3AA637;
+    border-color: #3A8C37;
+}
+
+.navbar-inverse .navbar-nav > li:hover {
+    background-color: #3A8C37;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    /*color: #EFFF5C;*/
+    background-color: transparent;
+}
+
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #3A8C37;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #3A8C37;
+}
+
+.form-control:focus {
+    border-color: #3AA637;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#foodSearchDiv > span {
+    background-color: #fafafa;
+}
+
+.foodSearchResultsLI.list-group-item {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.foodSearchResultsLI.list-group-item:hover {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: #f7ffb3;
+}
+
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+#tabs-1 > table {
+    border: 0px;
+}
+
+
+/*JQuery-UI overrides--------------------------------------------------------------------------------------------------*/
+
+
+#tabs {
+    border: 0px;
+    padding: 0px;
+    background-color: #fff;
+    clear:both;
+}
+
+.ui-widget-header {
+    background-color: #fff;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+
+.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+    background-color: #fafafa;
+}
+
+.ui-tabs-tab.ui-corner-top.ui-state-active.ui-tab {
+    background-color: #fff;
+    border-color: #ddd;
+    border-bottom: 0px;
+    color: black;
+}
+
+.ui-tabs-tab.ui-corner-top.ui-state-active.ui-tab a {
+    color: black;
+}
+
+#tabs li a:focus {
+    outline: none;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
+    padding: 5px 7px 7px 5px;
+}
+
+.ui- -titlebar-close {
+    color: black;
+    outline: none;
+}
+
+.hasDatepicker {
+    height: 300px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+}
+
+
+
+.ui-datepicker-calendar {
+    width: 100%;
+    height: 90%;
+}
+
+#datepicker a.ui-state-default {
+    background-color: transparent;
+    border-color: #e5e5e5;
+    height: 100%;
+    border-radius: 2px;
+}
+
+#datepicker  .ui-state-disabled >  .ui-state-default{
+    background-color: transparent;
+    border-color: #e5e5e5;
+    height: 100%;
+    border-radius: 2px;
+}
+
+
+#datepicker a.ui-state-default.ui-state-active {
+    border: 1px solid #faaf52;
+    font-weight: bold;
+    color:#faaf52 !important;
+}
+
+
+#datepicker a.ui-state-default.ui-state-active {
+    border: 1px solid #cbb123;
+    font-weight: bold;
+    color:#cbb123 !important;
+}
+
+.highlightedDates a {
+    background-color: #3A8C37 !important;
+    color: white !important;
+}
+
+
+/*Custom CSS-----------------------------------------------------------------------------------------------------------*/
+
+
+.gi-2x {
+    font-size: 2em;
+}
+
+.gi-3x {
+    font-size: 3em;
+}
+
+.gi-4x {
+    font-size: 4em;
+}
+
+.gi-5x {
+    font-size: 5em;
+}
+
+
+.cardShadow {
+    -webkit-box-shadow: 0px .5px .5px .5px rgba(180,180,150,1);
+    -moz-box-shadow: 0px .5px .5px .5px rgba(180,180,150,1);
+    box-shadow: 0px .5px .5px .5px rgba(180,180,150,1);
+}
+
+.cardShadow:hover{
+    -webkit-box-shadow: 0px 1px 1px 1px #a4a8a1;
+    -moz-box-shadow: 0px 1px 1px 1px #a4a8a1;
+    box-shadow: 0px 1px 1px 1px #a4a8a1;
+}
+
+.cardLabelGreen {
+    padding: .3em 0em .7em .5em;
+    font-size: 1.3em;
+    color: #3A8C37;
+}
+
+.cardLabelRed{
+    padding: .3em 0em .7em .5em;
+    font-size: 1.3em;
+    color: red;
+}
+
+.cardLabelOrange{
+    padding: .3em 0em .7em .5em;
+    font-size: 1.3em;
+    color: #ff8d00;
+}
+
+.navElementVisibleOnlyOnMobile {
+    display: none !important;
+}
+
+#searchContainer {
+    position: relative;
+}
+
+#foodSearchBoxContainer {
+    margin-top: 30px;
+}
+
+#foodSearchBox {
+    -moz-min-width: 100%;
+    -ms-min-width: 100%;
+    -o-min-width: 100%;
+    -webkit-min-width: 100%;
+    min-width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+
+#foodSearchResultsContainer {
+    position: absolute;
+    max-height: 200px;
+    overflow: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+#foodSearchUL {
+    list-style-type: none;
+}
+
+#foodSearchUL li {
+    z-index: 9;
+    position: relative;
+    list-style-type: none;
+    padding: 2px 10px 2px 10px;
+    width: 100%;
+}
+
+#dailyTotalsAndScoreContainer{
+    margin: 10px 0px 10px 0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.ct-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    stroke-width: 0px;
+    fill: #747070;
+}
+
+#dailyTotalsChart > svg > g.ct-series.ct-series-a .ct-slice-pie {
+    fill: #bfbc76;
+}
+
+#dailyTotalsChart > svg > g.ct-series.ct-series-b .ct-slice-pie {
+    fill: #f87355;
+}
+
+#dailyInfoDiv, #dailyTotalsChart {
+    min-height: 200px;
+}
+
+
+#calsDailyInfo{
+    font-size: 2.7em;
+    color:#747070;
+    font-weight: 700;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#dailyTotalsReportContainer{
+    text-align: center;
+    color:#747070;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#dailyTotalsTable{
+    display: none;
+}
+
+.macroRatiosTable{
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+#fullDailyReportTable{
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: right;
+    width: 70%;
+}
+
+#scoreInfoDiv {
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+#scoreInfoCollapsed{
+    display:none;
+}
+
+#tableScoreInfoCollapsed{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#tableScoreInfoCollapsed tr td{
+    border: 0px;
+    padding: 5px 0px;
+}
+
+#scoreInfoFull {
+    padding-left:60px;
+    margin-top: 7%;
+    font-size: 1.1em;
+    color: #747070;
+    text-align:left;
+    overflow:hidden;
+}
+
+#scoreInfoFull div {
+    margin-bottom: 10px;
+}
+
+#levelProgressBar{
+    background-color: #a7d889;
+}
+
+#foodEditDiv {
+    border: 1px solid red;
+    position: fixed;
+    z-index: 10;
+    background-color: yellow;
+}
+
+
+#loggedFoodsContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 300px;
+}
+
+
+#nothingHere{
+    margin-top: 10px;
+    padding-top: 100px;
+    height: 300px;
+    border: 4px dashed lightgray;
+    width: 100%;
+    text-align: center;
+    vertical-align: central;
+    font-size: 3em;
+    color:lightgray;
+}
+
+
+.loggedFoodCompact, #logFood, #editLoggedFood{
+    -moz-min-height: 70px;
+    -ms-min-height: 70px;
+    -o-min-height: 70px;
+    -webkit-min-height: 70px;
+    min-height: 70px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#logFood {
+    overflow: hidden;
+}
+
+#editLoggedFood {
+    overflow: hidden;
+}
+
+
+@-moz-keyframes yellowfade {
+    from { background-color: #fffd8e; }
+    to {background-color: #fff;}
+}
+
+@-webkit-keyframes yellowfade {
+    from { background-color: #fffd8e; }
+    to {background-color: #fff;}
+}
+
+@keyframes yellowfade {
+    from { background-color: #fffd8e; }
+    to {background-color: #fff;}
+}
+
+
+.newLoggedFoodCompact {
+    animation-name: yellowfade;
+    animation-duration: 2s;
+}
+
+.newLoggedFoodNameCompact {
+    animation-name: textColorChange;
+    animation-duration: 2s;
+}
+
+
+.loggedFoodInfoCompact {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+
+#infoContainerLogFood {
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-size: 1em;
+}
+
+#actionContainerLogFood {
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+#infoTableLogFood {
+    clear: right;
+    margin-bottom: .5em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+#infoTableLogFood td, #fullDailyReportTable td {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: .2em 1em .2em 0em;
+    font-size: .9em;
+    text-align: left;
+}
+
+.valuesInfoTable {
+    text-align: right;
+}
+
+.labelSecLogFoodInfo {
+    padding-left: 10px !important;
+}
+
+.labelPrimLogFoodInfo {
+    font-weight: 600;
+}
+
+#calsLogFood {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+
+
+#unitsLogFood, #quantityLogFood {
+    max-width: 100%;
+}
+
+.saveBtn, .updateBtn {
+    float: right;
+    margin-left: .3em;
+}
+
+.cancelBtn {
+    float: right;
+}
+
+.deleteBtn {
+    float: left;
+}
+
+
+#sidebarContainer {
+    padding: 0px 3px 3px 3px;
+    overflow: hidden;
+}
+
+#calendarContainer, #dateBrowser , #rankSidebarContainer{
+    padding-right: 0px;
+}
+
+
+#dateBrowser {
+    height: 40px;
+    margin-top: 10px;
+    padding-right: 0px;
+}
+
+#date, #prevDate, #nextDate {
+    height: 100%;
+    outline-color: lightgray;
+}
+
+#date:hover, #prevDate:hover, #nextDate:hover {
+    background-color: transparent;
+}
+
+#date:focus, #prevDate:focus, #nextDate:focus {
+    background-color: transparent;
+}
+
+#date {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    font-weight:600;
+    border: 0px;
+    color:#3A8C37;
+}
+
+
+#dateCaret {
+    float: right;
+}
+
+#prevDate {
+    margin-right: 4%;
+    border: 0px;
+}
+
+#nextDate {
+    margin-left: 4%;
+    border: 0px;
+}
+
+#datepicker {
+    display: none;
+}
+.rankTableDiv {
+    min-height: 200px;
+    margin-top: 10px;
+}
+
+.rankTable {
+    margin: 10px 20px 20px 10px;
+}
+
+.rankTable tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+.rankTabs td {
+    color: #747070;
+    border-top:0px!important;
+}
+
+.chosenRankTab{
+    color: #747070 !important;
+    font-weight:bold;
+    border-bottom: 1px solid #ff8d00;
+}
+
+footer {
+    padding-top: 100px;
+    clear: left;
+}
+
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    /*Bootstrap override*/
+
+    .navbar .navbar-nav, .navElementVisibleOnlyOnMobile{
+        display: inline-block !important;
+        float: none;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu {
+        background-color: #3AA637;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li:hover {
+        background-color: #3A8C37;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider,
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider:hover {
+        background-color: transparent;
+    }
+
+
+
+
+    /*Custom CSS-----------max-width-767px---*/
+
+    #dropdownNavRight {
+        display: none;
+    }
+
+
+    #userNameInNavMobile{
+        color: yellow;
+        font-size: 16px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #3AA637;
+
+    }
+
+    #fullDailyReportTable{
+        width: 90%;
+    }
+    .macroRatiosTable {
+        width: 65%;
+    }
+
+    #scoreInfoCollapsed{
+        display:unset;
+    }
+    #scoreInfoFull{
+        display: none;
+    }
+
+    .NameCompact {
+        padding-top: .3em;
+        padding-left: 10px;
+        font-size: 1.2em;
+    }
+
+    .loggedFoodInfoCompact {
+        font-size: .86em;
+    }
+
+    #calendarContainer, #dateBrowser {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #rankSidebarContainer {
+        padding-left: 0px;
+        padding-right: 0px;
+        display:none;
+    }
+
+
+    #infoTableLogFood {
+        width: 90%;
+    }
+    #actionContainerLogFood {
+        padding-left: 15px;
+    }
+
+    #datepicker {
+        display: none;
+    }
+
+    #nothingHere {
+        font-size: 2em;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #scoreInfoFull {
+        padding-left: 0px;
+    }
+    #calendarContainer, #dateBrowser {
+        padding-left: 10px;
+    }
+
+    #rankSidebarContainer {
+        padding-left: 10px;
+        display: none;
+    }
+
+    #nothingHere {
+        font-size: 2.7em;
+    }
+    #scoreInfoDiv{
+        padding-left: 0px;
+    }
+
+
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+
+
+/*--------------------------------SCORES-TAB-------------------------------------*/
+
+
+
+
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
+
+.removeFollowed a {
+    color:#337ab7;
+}
+#rankAndFollowContainer {
+    padding: 0px;
+}
+
+#followContainer{
+    overflow: hidden;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding-top: 7px;
+}
+
+
+#followContainer td {
+    border: 0px;
+}
+
+.containerLabel {
+    color:brown;
+    padding-left:0px;
+
+}
+
+.rankContainer {
+    margin-top: 10px;
+}
+#rankMainContainer {
+    padding: 0px;
+}
+.rankTableDiv {
+    padding-top:7px;
+}
+
+.rankTable tbody tr td {
+    border:0px;
+}
+
+
+/* Extra small devices (phones, up to 480px) */
+
+@media screen and (max-width: 480px) {
+
+    #followUserForm #followUserInput {
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 767px) {
+
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
+/*----------------------------User Food Section------------------------------*/
+
+/*.userFoodContainer {
+    padding-left: 0px;
+}*/
+
+.userFoodForm{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.userFoodForm .form-control {
+    max-width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.validationMsg{
+    color: #a94442;
+    font-size: 1em;
+    float:left;
+}
+
+.required{
+    color:red;
+    font-weight: bold;
+}
+
+#addUnit{
+    float:right;
+    padding-right: 15px;
+}
+
+#addFoodUnit{
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 2px;
+    overflow: hidden;
+
+}
+
+
+#continueBtn {
+    float: right;
+}
+
+
+#unitBtnContainer {
+    margin: 4px 0px 15px 0px;
+}
+
+
+#createFoodBtn, #closeUnitBtn, #addUnitBtn {
+    float: right;
+}
+
+#cancelBtnCreateFood {
+    float: left;
+    margin-right: 5px;
+}
+
+#backBtnCreateFood {
+    float: right;
+    margin-right: 5px;
+}
+
+#createFoodStep2{
+    display: none;
+}
+
+#userFoodList {
+    padding-right: 0px;
+}
+
+
+#headerAddUnit{
+    margin: 3px 0px 0px 0px;
+    padding-left: 0px;
+}
+
+#actionContainerAddUnit {
+
+    margin-bottom: 20px;
+}
+
+
+
+.actionContainerMyFoods {
+    text-align:right;
+
+}
+
+
+.closeBtnContainer {
+    margin-top: 5px;
+    text-align:right;
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
