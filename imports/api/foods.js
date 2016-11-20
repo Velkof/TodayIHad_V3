@@ -7,7 +7,12 @@ import {check} from 'meteor/check';
 
 export const Foods = new Mongo.Collection('foods');
 
+if (Meteor.isServer) {
 
+    Meteor.publish('foods', function foodsPublication() {
+        return Foods.find({ owner: this.userId });
+    });
+}
 Meteor.methods({
     'foods.insert' ( name, calories, protein, fat, carbs) {
         check(name, String);
@@ -20,7 +25,8 @@ Meteor.methods({
                     carbs,
                     createdAt: new Date(),
                     updatedAt: new Date(),
-                });
+                    owner: Meteor.userId(),
+        });
 
     },
     'foods.remove' (foodId) {

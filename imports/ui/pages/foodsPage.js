@@ -12,6 +12,7 @@ import './foodsPage.html';
 
 Template.foodsPage.onCreated(function(){
     this.showAddFoodUnit = new ReactiveVar(false);
+    Meteor.subscribe('foods');
 });
 
 Template.foodsPage.helpers({

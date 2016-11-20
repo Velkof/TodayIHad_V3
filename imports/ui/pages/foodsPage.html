@@ -1,10 +1,11 @@
 <template name="foodsPage">
     <div class="container">
-        <header>
-            <h2>Create new food</h2> <br/>
-        </header>
-
         <main>
+            {{>loginButtons}}
+
+
+            <h2>Create new food</h2> <br/>
+
             <form class="createFood">
                 <div class="userFoodForm form-group col-md-7">
                     <div id="createFoodStep1">
