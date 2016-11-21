@@ -30,6 +30,7 @@ Meteor.methods({
 
     },
     'foods.remove' (foodId) {
+
         const food = Foods.findOne(foodId);
         Foods.remove(food);
     },

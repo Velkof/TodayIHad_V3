@@ -25,9 +25,16 @@ FlowRouter.route('/foods', {
     },
 });
 
-FlowRouter.route('/foods/edit', {
-    name: 'editFoods',
-    action() {
-        BlazeLayout.render('appBody', { foodList: 'editFoodsPage', foodUnits:'addFoodUnit' });
-    },
+// FlowRouter.route('/foods/edit', {
+//     name: 'editFoods',
+//     action() {
+//         BlazeLayout.render('appBody', { foodList: 'editFoodsPage', foodUnits:'addFoodUnit' });
+//     },
+// });
+//
+FlowRouter.route('/foods/edit/:name', {
+    name: 'editFood',
+    action: function() {
+        BlazeLayout.render("appBody", {foodList: 'editFoodsPage', foodUnits:'addFoodUnit' });
+    }
 });
