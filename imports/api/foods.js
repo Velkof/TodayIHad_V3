@@ -5,8 +5,6 @@ import { Meteor } from 'meteor/meteor';
 import {Mongo} from 'meteor/mongo';
 import {check} from 'meteor/check';
 
-export const Foods = new Mongo.Collection('foods');
-
 if (Meteor.isServer) {
 
     Meteor.publish('foods', function foodsPublication() {
@@ -30,8 +28,11 @@ Meteor.methods({
 
     },
     'foods.remove' (foodId) {
-
         const food = Foods.findOne(foodId);
         Foods.remove(food);
+    },
+    'foods.update' (foodId, name, calories, protein, fat, carbs) {
+        Foods.update({_id: foodId}, {$set: {name: name, calories: calories,
+                                    protein: protein, fat: fat, carbs:carbs}});
     },
 });
