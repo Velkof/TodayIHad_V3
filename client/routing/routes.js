@@ -10,14 +10,21 @@ FlowRouter.route('/app-body', {
 FlowRouter.route('/foods', {
     name: 'foods',
     action() {
-        BlazeLayout.render('appBody', { foodList: 'foodsPage', foodUnits:'addFoodUnit' });
+        BlazeLayout.render('appBody', { page: 'foodsPage', foodUnits:'addFoodUnit' });
     },
 });
 
 
-FlowRouter.route('/foods/edit/:name/:id', {
+FlowRouter.route('/foods/:name/:id', {
     name: 'editFood',
     action: function() {
-        BlazeLayout.render("appBody", {foodList: 'editFoodsPage', foodUnits:'addFoodUnit' });
+        BlazeLayout.render("appBody", {page: 'editFoodsPage', foodUnits:'addFoodUnit' });
     }
+});
+
+FlowRouter.route('/dashboard', {
+   name: 'dashboard',
+   action: function(){
+        BlazeLayout.render('appBody', {page: 'dashboardPage'});
+   },
 });

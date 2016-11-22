@@ -1,9 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 import {Mongo} from 'meteor/mongo';
+import {check} from 'meteor/check';
+
+export const CustomFoodUnits = new Mongo.Collection(null);
+
 
 Meteor.methods({
     'customFoodUnits.insert' (name, gramWeight) {
-
         CustomFoodUnits.insert({
             name,
             gramWeight,
@@ -14,5 +17,3 @@ Meteor.methods({
         CustomFoodUnits.remove(customFoodUnit);
     },
 });
-
-

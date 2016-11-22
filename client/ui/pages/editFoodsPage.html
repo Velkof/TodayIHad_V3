@@ -27,12 +27,9 @@
                                     <a id="addUnit" href="">Add Unit</a>
                                 </div>
                                 <select id="userFoodUnit" class="form-control" name="userFoodUnit">
-                                    <option id="optionGr" value="gr" data-gramweight="1" selected>gr</option>
-                                    <option id="optionOz" value="oz" data-gramweight="28.35">oz</option>
-                                    <!--{{#each customFoodUnits}}-->
-                                        <!--{{>customFoodUnitOption}}-->
-                                    <!--{{/each}}-->
-
+                                    {{#each unitsForCurrentFood}}
+                                        {{>customFoodUnitOption}}
+                                    {{/each}}
                                 </select>
                             </div>
                         </div>
@@ -62,14 +59,15 @@
                                 <input type="number" value="{{foodForEdit.carbs}}" placeholder="0" name="userFoodCarbs" class="form-control" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" id="createFoodBtn" value="Update Food" class="btn btn-info" />
+                        <div class="row form-group">
+                            <div class="col-xs-12">
+                                <button class="backBtn btn btn-default">Back</button>
+                                <input type="submit" id="createFoodBtn" value="Update Food" class="btn btn-info" />
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </form>
-
             <div class="row col-xs-12 col-md-7">
                 <h3>My Foods</h3>
                 <table class="table">

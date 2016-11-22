@@ -2,6 +2,8 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
+import {CustomFoodUnits} from '/imports/api/customFoodUnits.js';
+
 import '../components/customFoodUnitOption.js';
 import '../components/food.js';
 import './foodsPage.html';

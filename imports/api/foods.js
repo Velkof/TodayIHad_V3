@@ -6,11 +6,11 @@ import {Mongo} from 'meteor/mongo';
 import {check} from 'meteor/check';
 
 if (Meteor.isServer) {
-
     Meteor.publish('foods', function foodsPublication() {
         return Foods.find({ owner: this.userId });
     });
-}
+};
+
 Meteor.methods({
     'foods.insert' ( name, calories, protein, fat, carbs) {
         check(name, String);
